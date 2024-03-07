@@ -1,4 +1,5 @@
-﻿using LINQ_to_Objects.Inserters;
+﻿using LINQ_to_Objects.DTO;
+using LINQ_to_Objects.Inserters;
 using LINQ_to_Objects.Service;
 
 namespace LINQ_to_Objects.Execution
@@ -18,21 +19,30 @@ namespace LINQ_to_Objects.Execution
             RacesInserter.InsertRaces(data.Races);
             StadiumsInserter.InsertStadiums(data.Stadiums);
 
-            var addresses = data.Addresses.Select(a => new
-            {
-                a.Id,
-                a.Country,
-                a.Area,
-                a.District,
-                a.PostalCode,
-                a.Street,
-                a.BuildingNumber,
-            });
+            Printer.PrintMenu();
+            int firstItem = 1;
+            int lastItem = 20;
+            int currentItem;
 
-            foreach (var address in addresses)
+            do
             {
-                Console.WriteLine(address);
+                Console.Write($"\nEnter your choice [{firstItem}; {lastItem}]: ");
+                string? inputLine = Console.ReadLine();
+
+                if (inputLine.IsValid() && (currentItem = Convert.ToInt32(inputLine)).IsInRange(firstItem, lastItem))
+                {
+                    QueryExecutor.Execute(data, currentItem);
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect input");
+                }
+
+                Console.Write("\nPress <Enter> to continue ...");
             }
+            while (Console.ReadKey().Key == ConsoleKey.Enter);
+
+            Console.WriteLine("\nProgram ends.");
         }
     }
 }
