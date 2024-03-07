@@ -16,19 +16,19 @@ namespace LINQ_to_Objects.Inserters
                 Id = 1,
                 Name = "Silverstone Circuit",
                 TrackLength = 5900,
-                ParticipantCapacity = 50,
-                AudienceCapacity = 150000,
-                AddressId = 5
+                ParticipantCapacity = 30,
+                AudienceCapacity = 300000,
+                AddressId = 6
             };
 
             Stadium stadium2 = new()
             {
                 Id = 2,
                 Name = "Monaco Grand Prix Circuit",
-                TrackLength = 3337,
+                TrackLength = 3400,
                 ParticipantCapacity = 20,
                 AudienceCapacity = 200000,
-                AddressId = 6
+                AddressId = 7
             };
 
             stadiums.AddRange(new List<Stadium>()
