@@ -316,8 +316,14 @@ namespace LINQ_to_Objects.Service
         /// Query 12. (Query syntax)
         /// Return the caretaker who lives in the specified country and earns more than the specified amount of money
         /// </summary>
-        public static List<CaretakerCountryInfo> GetCaretakersInCountryWithSalaryAbove(List<Caretaker> caretakers, List<Address> addresses, string country, int salary)
+        public static List<CaretakerCountryInfo> GetCaretakersInCountryWithSalaryAbove(List<Caretaker> caretakers, List<Address> addresses, string? country, int salary)
         {
+            if (country is null)
+            {
+                Console.WriteLine("Country cannot be null");
+                return [];
+            }
+
             IEnumerable<CaretakerCountryInfo> res =
                 from c in caretakers
                 where c.Salary > salary
@@ -339,8 +345,14 @@ namespace LINQ_to_Objects.Service
         /// Query 13. (Method syntax)
         /// Returns races that took place at a stadium in the specified country
         /// </summary>
-        public static List<RaceCountryInfo> GetRacesInCountry(List<Race> races, List<Stadium> stadiums, List<Address> addresses, string country)
+        public static List<RaceCountryInfo> GetRacesInCountry(List<Race> races, List<Stadium> stadiums, List<Address> addresses, string? country)
         {
+            if (country is null)
+            {
+                Console.WriteLine("Country cannot be null");
+                return [];
+            }
+
             List<RaceCountryInfo> res = races
                 .Join(stadiums,
                       r => r.StadiumId,
@@ -407,7 +419,7 @@ namespace LINQ_to_Objects.Service
                 {
                     Id = j.Id,
                     FullName = j.FirstName + ' ' + j.MiddleName + ' ' + j.SecondName,
-                    Age = age / 365.25,
+                    Age = Math.Round(age / 365.25, 2),
                 };
 
             return res.ToList();
@@ -418,8 +430,15 @@ namespace LINQ_to_Objects.Service
         /// Query 16. (Query syntax)
         /// Returns caretakers who look after the specified breed of horse
         /// </summary>
-        public static List<CaretakerHorseBreedInfo> GetCaretakersForBreed(List<Caretaker> caretakers, List<Horse> horses, string breed)
+        public static List<CaretakerHorseBreedInfo> GetCaretakersForBreed(List<Caretaker> caretakers, List<Horse> horses, string? breed)
         {
+            if (breed is null)
+            {
+                Console.WriteLine("Breed cannot be null");
+                return [];
+            }
+
+
             IEnumerable<CaretakerHorseBreedInfo> res =
                 from c in caretakers
                 from horseId in c.HorseIds ?? [-1]
@@ -440,8 +459,14 @@ namespace LINQ_to_Objects.Service
         /// Query 17. (Query syntax)
         /// Returns the races in which the specified horses participated by nickname
         /// </summary>
-        public static List<RaceHorseNicknameCount> GetRacesByHorseNickname(List<Race> races, List<Participant> participants, List<Horse> horses, string nickname)
+        public static List<RaceHorseNicknameCount> GetRacesByHorseNickname(List<Race> races, List<Participant> participants, List<Horse> horses, string? nickname)
         {
+            if (nickname is null)
+            {
+                Console.WriteLine("Nickname cannot be null");
+                return [];
+            }
+
             IEnumerable<RaceHorseNicknameCount> res =
                 from r in races
                 join p in participants on r.Id equals p.RaceId
@@ -526,6 +551,12 @@ namespace LINQ_to_Objects.Service
         public static List<JockeyStadiumCountry> GetJockeysByStadiumCountry(List<Jockey> jockeys, List<Participant> participants, List<Stadium> stadiums,
                                                       List<Race> races, List<Address> addresses, string country)
         {
+            if (country is null)
+            {
+                Console.WriteLine("Country cannot be null");
+                return [];
+            }
+
             IEnumerable<JockeyStadiumCountry> res =
                 from a in addresses
                 where a.Country == country
