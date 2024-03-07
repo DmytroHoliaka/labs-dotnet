@@ -55,12 +55,25 @@ namespace LINQ_to_Objects.Inserters
                 AddressId = 4
             };
 
+            Jockey jockey5 = new()
+            {
+                Id = 5,
+                FirstName = "Alex",
+                SecondName = "Johnson",
+                MiddleName = "M.",
+                Pseudonym = "Lightning Rider",
+                BirthDate = new DateTime(1985, 6, 15), 
+                AddressId = 5
+            };
+
+
             jockeys.AddRange(new List<Jockey>()
             {
                 jockey1,
                 jockey2,
                 jockey3,
                 jockey4,
+                jockey5,
             });
         }
     }
