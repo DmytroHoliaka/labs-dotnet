@@ -16,7 +16,7 @@ namespace LINQ_to_Objects.Inserters
                 Id = 1,
                 Number = 101,
                 JockeyId = 1,
-                HourseId = 3,
+                HorseId = 3,
                 RaceId = 1
             };
 
@@ -25,7 +25,7 @@ namespace LINQ_to_Objects.Inserters
                 Id = 2,
                 Number = 102,
                 JockeyId = 2,
-                HourseId = 2,
+                HorseId = 2,
                 RaceId = 1
             };
 
@@ -34,7 +34,7 @@ namespace LINQ_to_Objects.Inserters
                 Id = 3,
                 Number = 103,
                 JockeyId = 3,
-                HourseId = 1,
+                HorseId = 1,
                 RaceId = 1
             };
 
@@ -43,7 +43,7 @@ namespace LINQ_to_Objects.Inserters
                 Id = 4,
                 Number = 104,
                 JockeyId = 4,
-                HourseId = 2,
+                HorseId = 2,
                 RaceId = 1
             };
 
@@ -51,8 +51,8 @@ namespace LINQ_to_Objects.Inserters
             {
                 Id = 5,
                 Number = 105,
-                JockeyId = 2,
-                HourseId = 4,
+                JockeyId = 1,
+                HorseId = 3,
                 RaceId = 2
             };
 
@@ -61,7 +61,7 @@ namespace LINQ_to_Objects.Inserters
                 Id = 6,
                 Number = 106,
                 JockeyId = 4,
-                HourseId = 3,
+                HorseId = 1,
                 RaceId = 2
             };
 
@@ -70,7 +70,7 @@ namespace LINQ_to_Objects.Inserters
                 Id = 7,
                 Number = 107,
                 JockeyId = 2,
-                HourseId = 3,
+                HorseId = 3,
                 RaceId = 2
             };
 
@@ -79,7 +79,7 @@ namespace LINQ_to_Objects.Inserters
                 Id = 8,
                 Number = 108,
                 JockeyId = 4,
-                HourseId = 1,
+                HorseId = 1,
                 RaceId = 2
             };
 
