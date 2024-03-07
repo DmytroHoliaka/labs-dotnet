@@ -84,6 +84,65 @@ namespace LINQ_to_Objects.Inserters
                 BuildingNumber = 76
             };
 
+            Address address7 = new()
+            {
+                Id = 7,
+                Country = "USA",
+                City = "New York",
+                Area = "New York State",
+                District = "Manhattan",
+                PostalCode = "10001",
+                Street = "8th Avenue",
+                BuildingNumber = 300
+            };
+
+            Address address8 = new()
+            {
+                Id = 8,
+                Country = "Italy",
+                City = "Rome",
+                Area = "Lazio",
+                District = "Trastevere",
+                PostalCode = "00153",
+                Street = "Via della Scala",
+                BuildingNumber = 45
+            };
+
+            Address address9 = new()
+            {
+                Id = 9,
+                Country = "Canada",
+                City = "Toronto",
+                Area = "Ontario",
+                District = "Downtown",
+                PostalCode = "M5H 2N2",
+                Street = "Bay Street",
+                BuildingNumber = 200
+            };
+
+            Address address10 = new()
+            {
+                Id = 10,
+                Country = "Spain",
+                City = "Barcelona",
+                Area = "Catalonia",
+                District = "Eixample",
+                PostalCode = "08007",
+                Street = "Passeig de Gràcia",
+                BuildingNumber = 92
+            };
+
+            Address address11 = new()
+            {
+                Id = 11,
+                Country = "Italy",
+                City = "Rome",
+                Area = "Lazio",
+                District = "Trastevere",
+                PostalCode = "22070-010",
+                Street = "Avenida Atlântica",
+                BuildingNumber = 1702
+            };
 
             addresses.AddRange(new List<Address>
             {
@@ -93,6 +152,11 @@ namespace LINQ_to_Objects.Inserters
                 address4,
                 address5,
                 address6,
+                address7,
+                address8,
+                address9,
+                address10,
+                address11,
             });
         }
     }
