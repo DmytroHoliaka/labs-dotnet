@@ -17,16 +17,16 @@ namespace LINQ_to_Objects.Inserters
                 Breed = "Thoroughbred",
                 Nickname = "Lightning",
                 Age = 3,
-                CaretakerIds = new List<int> { 1, 2 }
+                CaretakerIds = new List<int> { 1, 4 }
             };
 
             Horse horse2 = new()
             {
                 Id = 2,
                 Breed = "Arabian",
-                Nickname = "Blaze",
+                Nickname = "Lightning",
                 Age = 4,
-                CaretakerIds = new List<int> { 2 }
+                CaretakerIds = new List<int> { 1, 3 }
             };
 
             Horse horse3 = new()
@@ -35,7 +35,7 @@ namespace LINQ_to_Objects.Inserters
                 Breed = "Quarter Horse",
                 Nickname = "Dash",
                 Age = 5,
-                CaretakerIds = new List<int> { 1 }
+                CaretakerIds = new List<int> { 1, 2, 4 }
             };
 
             Horse horse4 = new()
@@ -44,7 +44,7 @@ namespace LINQ_to_Objects.Inserters
                 Breed = "Appaloosa",
                 Nickname = "Spot",
                 Age = 2,
-                CaretakerIds = new List<int> { 3 }
+                CaretakerIds = new List<int> { 2 }
             };
 
 
