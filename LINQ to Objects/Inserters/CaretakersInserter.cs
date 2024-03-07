@@ -18,10 +18,13 @@ namespace LINQ_to_Objects.Inserters
                 SecondName = "Doe",
                 MiddleName = "A.",
                 EmploymentDate = new DateTime(2018, 5, 21),
-                Salary = 3000,
+                Salary = 5000,
                 Responsibility = "Horse Training",
-                HourseIds = new List<int> { 1, 2, 3 }
+
+                AddressId = 8,
+                HorseIds = new List<int> { 1, 2, 3 }
             };
+
             Caretaker caretaker2 = new()
             {
                 Id = 2,
@@ -31,7 +34,9 @@ namespace LINQ_to_Objects.Inserters
                 EmploymentDate = new DateTime(2019, 8, 15),
                 Salary = 3200,
                 Responsibility = "Veterinary Care",
-                HourseIds = new List<int> { 3, 4 }
+
+                AddressId = 9,
+                HorseIds = new List<int> { 3, 4 }
             };
 
             Caretaker caretaker3 = new()
@@ -41,9 +46,11 @@ namespace LINQ_to_Objects.Inserters
                 SecondName = "Smith",
                 MiddleName = "C.",
                 EmploymentDate = new DateTime(2020, 1, 10),
-                Salary = 3500,
+                Salary = 1600,
                 Responsibility = "Nutrition Planning",
-                HourseIds = new List<int> { 2 }
+
+                AddressId = 10,
+                HorseIds = new List<int> { 2 }
             };
 
             Caretaker caretaker4 = new()
@@ -55,7 +62,9 @@ namespace LINQ_to_Objects.Inserters
                 EmploymentDate = new DateTime(2021, 11, 29),
                 Salary = 3400,
                 Responsibility = "General Maintenance",
-                HourseIds = new List<int> { 1, 3 }
+
+                AddressId = 11,
+                HorseIds = new List<int> { 1, 3 }
             };
 
             caretakers.AddRange(new List<Caretaker>()
