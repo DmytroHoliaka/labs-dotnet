@@ -6,7 +6,7 @@
         public int Number { get; set; }
 
         public int JockeyId { get; set; }
-        public int HourseId { get; set; }
+        public int HorseId { get; set; }
         public int RaceId { get; set; }
     }
 }

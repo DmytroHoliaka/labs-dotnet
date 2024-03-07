@@ -10,6 +10,7 @@
         public int Salary { get; set; }
         public string? Responsibility { get; set; }
         
-        public IEnumerable<int>? HourseIds { get; set; }
+        public int AddressId { get; set; }
+        public IEnumerable<int>? HorseIds { get; set; }
     }
 }
