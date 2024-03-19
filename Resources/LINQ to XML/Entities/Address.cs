@@ -14,5 +14,20 @@ namespace LINQ_to_XML.Entities
         public string? PostalCode { get; set; }
         public string? Street { get; set; }
         public int BuildingNumber { get; set; }
+
+        public override string ToString()
+        {
+            return
+               $"""
+                Id: {Id}
+                Country: {Country}
+                City: {City}
+                Area: {Area}
+                District: {District}
+                PostalCode: {PostalCode}
+                Street: {Street}
+                BuildingNumber: {BuildingNumber}
+                """;
+        }
     }
 }
