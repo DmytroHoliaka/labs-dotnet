@@ -11,5 +11,16 @@ namespace LINQ_to_XML.Entities
         public DateTime StartDate { get; set; }
 
         public int StadiumId { get; set; }
+
+        public override string ToString()
+        {
+            return
+               $"""
+                Id: {Id}
+                Number: {Number}
+                StartDate: {StartDate}
+                StadiumId: {StadiumId}
+                """;
+        }
     }
 }
