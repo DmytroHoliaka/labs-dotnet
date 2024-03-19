@@ -13,5 +13,17 @@ namespace LINQ_to_XML.Entities
 
         [XmlArrayItem("CaretakerId")]
         public List<int>? CaretakerIds { get; set; }
+
+        public override string ToString()
+        {
+            return
+               $"""
+                Id: {Id}
+                Breed: {Breed}
+                Nickname: {Nickname}
+                Age: {Age}
+                CaretakerIds: {string.Join(", ", CaretakerIds ?? Enumerable.Empty<int>())}
+                """;
+        }
     }
 }
