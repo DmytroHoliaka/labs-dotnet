@@ -12,5 +12,17 @@ namespace LINQ_to_XML.Entities
         public double MaxSpeed { get; set; }
 
         public int ParticipantId { get; set; }
+
+        public override string ToString()
+        {
+            return
+               $"""
+                Id: {Id}
+                Place: {Place}
+                Duration: {Duration}
+                MaxSpeed: {MaxSpeed}
+                ParticipantId: {ParticipantId}
+                """;
+        }
     }
 }
