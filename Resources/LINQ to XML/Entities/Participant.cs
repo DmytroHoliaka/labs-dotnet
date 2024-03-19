@@ -12,5 +12,17 @@ namespace LINQ_to_XML.Entities
         public int JockeyId { get; set; }
         public int HorseId { get; set; }
         public int RaceId { get; set; }
+
+        public override string ToString()
+        {
+            return
+               $"""
+                Id: {Id}
+                Number: {Number}
+                JockeyId: {JockeyId}
+                HorseId: {HorseId}
+                RaceId: {RaceId}
+                """;
+        }
     }
 }
