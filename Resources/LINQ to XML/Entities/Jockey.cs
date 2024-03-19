@@ -14,5 +14,18 @@ namespace LINQ_to_XML.Entities
         public DateTime BirthDate { get; set; }
 
         public int AddressId { get; set; }
+
+        public override string ToString()
+        {
+            return
+               $"""
+                Id: {Id}
+                FirstName: {FirstName}
+                SecondName: {SecondName}
+                MiddleName: {MiddleName}
+                Pseudonym: {Pseudonym}
+                BirthDate: {BirthDate}
+                """;
+        }
     }
 }
