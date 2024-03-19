@@ -1,4 +1,5 @@
 ﻿using System.Xml.Serialization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LINQ_to_XML.Entities
 {
@@ -13,5 +14,17 @@ namespace LINQ_to_XML.Entities
         public int AudienceCapacity { get; set; }
         
         public int AddressId { get; set; }
+
+        public override string ToString()
+        {
+            return
+               $"""
+                Id: {Id}
+                Name: {Name}
+                TrackLength: {TrackLength}
+                ParticipantCapacity: {ParticipantCapacity}
+                AudienceCapacity: {AudienceCapacity}
+                """;
+        }
     }
 }
