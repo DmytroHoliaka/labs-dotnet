@@ -69,7 +69,7 @@ namespace LINQ_to_XML.DataCollector
             return builder.ToString();
         }
 
-        public static string GetListContent<T>(List<T> list, string indent = "")
+        private static string GetListContent<T>(List<T> list, string indent = "")
         {
             StringBuilder builder = new();
 
