@@ -4,7 +4,7 @@ namespace LINQ_to_XML.Entities
 {
     [Serializable]
     public class Horse
-    { 
+    {
         [XmlAttribute]
         public int Id { get; set; }
         public string? Breed { get; set; }

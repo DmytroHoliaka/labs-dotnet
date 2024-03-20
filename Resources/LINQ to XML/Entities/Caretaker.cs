@@ -1,6 +1,4 @@
-﻿using System.Diagnostics.Metrics;
-using System.IO;
-using System.Xml.Serialization;
+﻿using System.Xml.Serialization;
 
 namespace LINQ_to_XML.Entities
 {
@@ -15,7 +13,7 @@ namespace LINQ_to_XML.Entities
         public DateTime EmploymentDate { get; set; }
         public int Salary { get; set; }
         public string? Responsibility { get; set; }
-        
+
         public int AddressId { get; set; }
         [XmlArrayItem("HorseId")]
         public List<int>? HorseIds { get; set; }
