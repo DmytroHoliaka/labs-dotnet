@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LINQ_to_XML.DTO
+﻿namespace LINQ_to_XML.DTO
 {
     internal class JockeyWins
     {
