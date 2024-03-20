@@ -62,7 +62,7 @@ namespace LINQ_to_XML.Inserters
                 SecondName = "Johnson",
                 MiddleName = "M.",
                 Pseudonym = "Lightning Rider",
-                BirthDate = new DateTime(1985, 6, 15), 
+                BirthDate = new DateTime(1985, 6, 15),
                 AddressId = 5
             };
 

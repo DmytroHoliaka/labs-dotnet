@@ -1,5 +1,4 @@
 ﻿using LINQ_to_XML.Entities;
-using System.ComponentModel;
 
 namespace LINQ_to_XML.Inserters
 {
