@@ -6,19 +6,19 @@ namespace LINQ_to_XML.Execution
     {
         public static void Main()
         {
-            //try
-            //{
-            string path = "data.xml";
-            Facade.Execute(path);
-            //}
-            //catch (ArgumentNullException ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
-            //catch (ArgumentException ex)
-            //{
-            //    Console.WriteLine(ex.Message);
-            //}
+            try
+            {
+                string path = "data.xml";
+                Facade.Execute(path);
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
