@@ -1,10 +1,13 @@
 ﻿namespace CreationalPatterns
 {
-    public class Program
+    public abstract class Program
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            const string jsonName = "filters.json";
+            const string basePath = "";
+
+            Facade.Execute(jsonName, basePath);
         }
     }
 }
