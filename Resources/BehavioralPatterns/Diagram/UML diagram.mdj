@@ -2713,7 +2713,7 @@
 											"top": 742,
 											"width": 398.48046875,
 											"height": 13,
-											"text": "-_rentals: Stack<IRentalCommand>",
+											"text": "-_rentals: List<IRentalCommand>",
 											"horizontalAlignment": 0
 										}
 									],
@@ -8034,7 +8034,7 @@
 							},
 							"name": "_rentals",
 							"visibility": "private",
-							"type": "Stack<IRentalCommand>"
+							"type": "List<IRentalCommand>"
 						}
 					],
 					"operations": [
