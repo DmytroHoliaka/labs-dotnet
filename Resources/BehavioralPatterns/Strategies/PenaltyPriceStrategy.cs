@@ -4,7 +4,7 @@ namespace BehavioralPatterns.Strategies;
 
 public class PenaltyPriceStrategy: PriceCalculationStrategy
 {
-    private const double Penalty = 0.9;
+    private const double Penalty = 1.2;
 
     public override int CalculatePrice(string? equipmentName, int duration)
     {
