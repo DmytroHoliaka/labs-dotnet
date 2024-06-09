@@ -1,0 +1,20 @@
+{
+  "Filters": {
+    "MotherboardFilter": {
+      "Price": null,
+      "Chipset": "IntelZ690"
+    },
+    "ProcessorFilter": {
+      "Price": null,
+      "CoreCount": 12
+    },
+    "HardDriveFilter": {
+      "Price": null,
+      "Capacity": 2048
+    },
+    "RamFilter": {
+      "Price": null,
+      "Capacity": 32
+    }
+  }
+}
