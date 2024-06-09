@@ -1,5 +1,9 @@
 /.vs
-
 /**/bin
 /**/obj
+
+/**/*.drawio
+/**/*.bkp
+
 /Labs .NET.sln.DotSettings.user
+/Documents/~*
