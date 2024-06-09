@@ -4,6 +4,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ to XML", "Resources\LINQ to XML\LINQ to XML.csproj", "{5D3CFDCB-FFD5-4B9D-B1EA-7C475E5FF2C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ to Objects", "Resources\LINQ to Objects\LINQ to Objects.csproj", "{31BC63F2-CBC6-4DC7-8CC8-4AB641874B14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
